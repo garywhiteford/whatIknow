@@ -17,6 +17,6 @@ Gary's repository of knowledge for reference and referrals.
 ## My Favorite Apps...
 
 * Client key lookup (Shiny app using rpivottable)
-* Third-party data validator (take data in Excel or CSV and check it before converting it to a standard format for loading into the company database)
+* Third-party data validator (Shiny app that takes data in Excel or CSV and checks it before converting it to a standard format for loading into the company database)
 * Client deliverables dashboard (making all the views our consultants use available in a single Shiny app that lets them explore the best way to present data to their clients)
 
