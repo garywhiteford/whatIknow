@@ -20,6 +20,10 @@ Gary's repository of knowledge for reference and referrals.
 * Third-party data validator (Shiny app that takes data in Excel or CSV and checks it before converting it to a standard format for loading into the company database)
 * Client deliverables dashboard (making all the views our consultants use available in a single Shiny app that lets them explore the best way to present data to their clients)
 
+## [What I'm Learning...][18]
+
+* [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training_20201-20210303131035.pdf))
+
 ## [Resources...][12]
 
 * [Common Education Data Standards](https://ceds.ed.gov/relatedInitiatives.aspx) ([More...][13])
@@ -30,3 +34,5 @@ Gary's repository of knowledge for reference and referrals.
 [4]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-4
 [12]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-12
 [13]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-13
+[18]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-18
+[19]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-19
