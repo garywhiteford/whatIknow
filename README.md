@@ -22,7 +22,7 @@ Gary's repository of knowledge for reference and referrals.
 
 ## [What I'm Learning...][18]
 
-* [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training_20201-20210303131035.pdf))
+* [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training.pdf))
 
 ## [Resources...][12]
 
