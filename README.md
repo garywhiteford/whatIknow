@@ -8,6 +8,12 @@ Gary's repository of knowledge for reference and referrals.
 * LarsonAllen (now CLA)
 * NSP (now Xcel Energy)
 
+## [What I've Done...][21]
+
+### [RHEL7 System Administrator][22]
+
+* Write a custom ETL process in R and Bash scripts
+
 ## [What I've Enjoyed...][3]
 
 * Making Excel do things my colleagues didn't think possible (like, Push2PPT)
@@ -23,7 +29,7 @@ Gary's repository of knowledge for reference and referrals.
 ## [What I'm Learning...][18]
 
 * [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training.pdf))
-* [Learning Bash Scripting][20] ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Learning_Bash_Scripting.pdf))
+* Fill out Bash knowledge with [Learning Bash Scripting][20] on LinkedIn Learning ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Learning_Bash_Scripting.pdf))
 
 ## [Resources...][12]
 
@@ -38,3 +44,5 @@ Gary's repository of knowledge for reference and referrals.
 [18]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-18
 [19]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-19
 [20]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-20
+[21]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-21
+[22]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-22
