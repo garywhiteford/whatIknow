@@ -23,6 +23,7 @@ Gary's repository of knowledge for reference and referrals.
 ## [What I'm Learning...][18]
 
 * [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training.pdf))
+* [Learning Bash Scripting][20] ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Learning_Bash_Scripting.pdf))
 
 ## [Resources...][12]
 
@@ -36,3 +37,4 @@ Gary's repository of knowledge for reference and referrals.
 [13]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-13
 [18]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-18
 [19]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-19
+[20]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-20
