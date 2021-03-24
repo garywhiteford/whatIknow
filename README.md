@@ -3,7 +3,7 @@ Gary's repository of knowledge for reference and referrals.
 
 ## [Where I've Worked...][2]
 
-* [CWT]() -- Add a link and description (like "Worked with a great team that innovated in the R, Shiny, Big Data arenas and liked it!")
+* [CWT](https://www.mycwt.com/) (I worked with a great team that innovated in the R, Shiny and Big Data arenas and I loved it!)
 * Medtronic
 * LarsonAllen (now CLA)
 * NSP (now Xcel Energy)
