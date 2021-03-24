@@ -30,7 +30,7 @@ Gary's repository of knowledge for reference and referrals.
 
 * [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training.pdf))
 * Fill out Bash knowledge with [Learning Bash Scripting][20] on LinkedIn Learning ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Learning_Bash_Scripting.pdf))
-* [Enterprise Architecture Foundations][32] on [LinkedIn Learning](https://www.linkedin.com/learning/enterprise-architecture-foundations) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Enterprise_Architecture_Foundations.txt))
+* [Enterprise Architecture Foundations][32] on [LinkedIn Learning](https://www.linkedin.com/learning/enterprise-architecture-foundations) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Enterprise_Architecture_Foundations.md))
 
 ## [Resources...][12]
 
