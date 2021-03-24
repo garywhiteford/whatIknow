@@ -30,6 +30,7 @@ Gary's repository of knowledge for reference and referrals.
 
 * [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training.pdf))
 * Fill out Bash knowledge with [Learning Bash Scripting][20] on LinkedIn Learning ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Learning_Bash_Scripting.pdf))
+* [Enterprise Architecture Foundations][32] on [LinkedIn Learning](https://www.linkedin.com/learning/enterprise-architecture-foundations) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Enterprise_Architecture_Foundations.txt))
 
 ## [Resources...][12]
 
@@ -46,3 +47,4 @@ Gary's repository of knowledge for reference and referrals.
 [20]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-20
 [21]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-21
 [22]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-22
+[32]: https://webbrain.com/brainpage/brain/9FA1AB0A-92D5-7E37-B20C-96A1F84461C0/parent/com.thebrain.webbrain.pages.clientsupport.BrainFullPage#-32
