@@ -28,9 +28,10 @@ Gary's repository of knowledge for reference and referrals.
 
 ## [What I'm Learning...][18]
 
+* [Data Engineering Foundations][WilDef] on [LinkedIn Learning](https://www.linkedin.com/learning/data-engineering-foundations) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Data_Engineering_Foundations.md))
+* [Enterprise Architecture Foundations][32] on [LinkedIn Learning](https://www.linkedin.com/learning/enterprise-architecture-foundations) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Enterprise_Architecture_Foundations.md)) -- Completed!
 * [Tableau][19] (2020.4.2) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Tableau_Essential_Training.pdf))
 * Fill out Bash knowledge with [Learning Bash Scripting][20] on LinkedIn Learning ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Learning_Bash_Scripting.pdf))
-* [Enterprise Architecture Foundations][32] on [LinkedIn Learning](https://www.linkedin.com/learning/enterprise-architecture-foundations) ([My learning/reference notes](https://github.com/garywhiteford/whatIknow/blob/main/docs/Notes-Enterprise_Architecture_Foundations.md))
 
 ## [Resources...][12]
 
@@ -48,3 +49,4 @@ Gary's repository of knowledge for reference and referrals.
 [21]: https://app.thebrain.com/brains/9fa1ab0a-92d5-7e37-b20c-96a1f84461c0/thoughts/82d64e00-eb0b-5920-b331-d29df560f9cf/notes
 [22]: https://app.thebrain.com/brains/9fa1ab0a-92d5-7e37-b20c-96a1f84461c0/thoughts/194ed16e-10e5-5256-9667-029ca6964c86/notes
 [32]: https://app.thebrain.com/brains/9fa1ab0a-92d5-7e37-b20c-96a1f84461c0/thoughts/0f4462d3-b201-58f3-b3c2-a4f92baed7ec/notes
+[WilDef]: https://app.thebrain.com/brains/9fa1ab0a-92d5-7e37-b20c-96a1f84461c0/thoughts/7ccfa136-e3c1-5cb2-9a52-2a0efa76363b/notes
