@@ -6,10 +6,12 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 
 ## Table of Contents
 
-* [7. What is Airflow?](#7-what-is-airflow) (Benefits, Core components, Operators, What Airflow is NOT!)
-* [8. How Airflow works?](#8-how-airflow-works) (Types of architecture, Overall process, Installation)
-* [10. [Practice] The CLI in Airflow 2.0](#10-practice-the-cli-in-airflow-20) (Create first user, Command overview)
-* [11. [Practice] What you need to know about the UI](#11-practice-what-you-need-to-know-about-the-ui) (Views, Logs)
+* 2. Getting Started with Airflow
+    * [7. What is Airflow?](#7-what-is-airflow) (Benefits, Core components, Operators, What Airflow is NOT!)
+    * [8. How Airflow works?](#8-how-airflow-works) (Types of architecture, Overall process, Installation)
+    * [10. [Practice] The CLI in Airflow 2.0](#10-practice-the-cli-in-airflow-20) (Create first user, Command overview)
+    * [11. [Practice] What you need to know about the UI](#11-practice-what-you-need-to-know-about-the-ui) (Views, Logs)
+    * Section 2: Key Takeaways
 
 ## Notes
 
@@ -83,6 +85,17 @@ Timestamp    |  Description
 [7:33][047]  |  Check **logs** by clicking on a task in any view (brings up Model view for that task) and then click on the logs button at the top.
 [7:54][048]  |  Model View. To re-run tasks, you must Clear them first (using the **Clear button** in the Model View).
 [8:00][049]  |  Model View. Use **Mark Failed** or **Mark Success** to test behavior of subsequent tasks
+
+#### Section 2: Key Takeaways
+
+* Airflow is an orchestrator, not a processing framework, process your gigabytes of data outside of Airflow (i.e. You have a Spark cluster, you use an operator to execute a Spark job, the data is processed in Spark).
+* A DAG is a data pipeline, an Operator is a task.
+* An Executor defines how your tasks are execute whereas a worker is a process executing your task
+* The scheduler schedules your tasks, the web server serves the UI, the database stores the metadata of Airflow.
+* ```airflow db init``` is the first command to execute to initialise Airflow
+* If a task fails, check the logs by clicking on the task from the UI and "Logs"
+* The Gantt view is super useful to sport bottlenecks and tasks are too long to execute
+
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
