@@ -4,6 +4,13 @@
 
 Learn to author, schedule and monitor data pipelines through practical examples using Apache Airflow. 
 
+## Table of Contents
+
+* [7. What is Airflow?](#7-what-is-airflow) (Benefits, Core components, Operators, What Airflow is NOT!)
+* [8. How Airflow works?](#8-how-airflow-works) (Types of architecture, Overall process, Installation)
+* [10. [Practice] The CLI in Airflow 2.0](#10-practice-the-cli-in-airflow-20) (Create first user, Command overview)
+* [11. [Practice] What you need to know about the UI](#11-practice-what-you-need-to-know-about-the-ui) (Views, Logs)
+
 ## Notes
 
 ### 2. Getting Started with Airflow
