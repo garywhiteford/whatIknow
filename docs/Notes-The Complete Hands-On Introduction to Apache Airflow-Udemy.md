@@ -103,93 +103,92 @@ Timestamp    |  Description
 
 Timestamp    |  Description
 ------------ | --------------
-0:21         | Questions to be answered<br>1. How to create a data pipeline?<br>2. How to interact with a third-party tool from a data pipeline?<br>3. How to check for a file to exist before moving to the next task?
+[0:21][050]  | Questions to be answered<br>1. How to create a data pipeline?<br>2. How to interact with a third-party tool from a data pipeline?<br>3. How to check for a file to exist before moving to the next task?
 
 #### 14. What is a DAG?
 
 Timestamp    |  Description
 ------------ | --------------
-0:54         | A DAG is a directed acyclic graph with directed dependencies, tasks corresponding to the nodes and no loops.
+[0:54][051]  | A DAG is a directed acyclic graph with directed dependencies, tasks corresponding to the nodes and no loops.
 
 #### 15. [Practice] Time to code your first DAG
 
 Timestamp    |  Description
 ------------ | --------------
-0:33         | Overall Process<br>1. Creating_table (SQLite operator)<br>2. Is_API_available (HTTP sensor)<br>3. Extracting_user (HTTP operator)<br>4. Processing_user (Python operator)<br>5. Storing_user (Bash operator)<br> <br>References<br>https://airflow.apache.org/docs/apache-airflow-providers-sqlite/stable/operators.html<br>https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html#httpsensor<br>https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html<br>https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/python.html<br>https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/bash.html
+[0:33][052]  | Overall Process<br>1. Creating_table (SQLite operator)<br>2. Is_API_available (HTTP sensor)<br>3. Extracting_user (HTTP operator)<br>4. Processing_user (Python operator)<br>5. Storing_user (Bash operator)<br> <br>References<br>https://airflow.apache.org/docs/apache-airflow-providers-sqlite/stable/operators.html<br>https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html#httpsensor<br>https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html<br>https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/python.html<br>https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/bash.html
 
 #### 16. [Practice] DAG Skeleton
 
 Timestamp    |  Description
 ------------ | --------------
-0:07         | Initial steps<br>1. Start Oracle VM VirtualBox<br>2. Start AirflowVM<br>3. Start Visual Studio Code<br>4. Connect to VM (in VSC: F1 > remote-ssh: Connect > localhost > password)<br>5. In VSC: Terminal > New Terminal<br>6. Start Python Virtual Environment: source sandbox/bin/activate
-1:05         | 7. Navigate to airflow subdirectory and open in Explorer in VSC (may need to type password again)
-1:47         | 8. Create folder: dags
-2:13         | 9. In dags folder, create file: user_processing.py
-2:45         | 10. Add line:<br>```from airflow.models import DAG```<br>11. On my own: Add Microsoft Python extension for Visual Studio Code<br>11a. Install pylint (per Python extension)
-3:10         | 12. Add line (import Python module for defining a date):<br>```from datetime import datetime```
-3:37         | 13. Add line (instantiate the DAG):<br>```with DAG()```<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=dag_id#instantiate-a-dag
-3:50         | 14. Define a DAG ID (unique among all DAGs in the system):<br>```'user_processing'```
-4:13         | 15. Define the schedule interval (how frequently the data pipeline will be triggered):<br>```schedule_interval='@daily'```
-4:37         | 16. Define the start date (when your data pipeline will start being scheduled):<br>```start_date=datetime(2020, 1, 1)```
-5:02         | 17. Define the catchup (to be explained):<br>```catchup=False```
-5:15         | 18. Close out the instantiation (with target / variable / object name):<br>```as dag:```
-5:40         | 19. Create default arguments as a dictionary:<br>```default_args = {```<br>``` ```<br>```}```<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=dag_id#default-arguments
-6:19         | 20. Move start_date out of the DAG instantiation and into the default arguments dictionary:<br>```'start_date': datetime(2020, 1, 1)```<br>Ref: https://docs.python.org/3/reference/expressions.html#dictionary-displays
-6:36         | 21. In the DAG instantiation, add a reference to the default arguments dictionary:<br>```default_args=default_args```
+[0:07][053]  | Initial steps<br>1. Start Oracle VM VirtualBox<br>2. Start AirflowVM<br>3. Start Visual Studio Code<br>4. Connect to VM (in VSC: F1 > remote-ssh: Connect > localhost > password)<br>5. In VSC: Terminal > New Terminal<br>6. Start Python Virtual Environment: source sandbox/bin/activate
+[1:05][054]  | 7. Navigate to airflow subdirectory and open in Explorer in VSC (may need to type password again)
+[1:47][055]  | 8. Create folder: dags
+[2:13][056]  | 9. In dags folder, create file: user_processing.py
+[2:45][057]  | 10. Add line:<br>```from airflow.models import DAG```<br>11. On my own: Add Microsoft Python extension for Visual Studio Code<br>11a. Install pylint (per Python extension)
+[3:10][058]  | 12. Add line (import Python module for defining a date):<br>```from datetime import datetime```
+[3:37][059]  | 13. Add line (instantiate the DAG):<br>```with DAG()```<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=dag_id#instantiate-a-dag
+[3:50][060]  | 14. Define a DAG ID (unique among all DAGs in the system):<br>```'user_processing'```
+[4:13][061]  | 15. Define the schedule interval (how frequently the data pipeline will be triggered):<br>```schedule_interval='@daily'```
+[4:37][062]  | 16. Define the start date (when your data pipeline will start being scheduled):<br>```start_date=datetime(2020, 1, 1)```
+[5:02][063]  | 17. Define the catchup (to be explained):<br>```catchup=False```
+[5:15][064]  | 18. Close out the instantiation (with target / variable / object name):<br>```as dag:```
+[5:40][065]  | 19. Create default arguments as a dictionary:<br>```default_args = {```<br>``` ```<br>```}```<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=dag_id#default-arguments
+[6:19][066]  | 20. Move start_date out of the DAG instantiation and into the default arguments dictionary:<br>```'start_date': datetime(2020, 1, 1)```<br>Ref: https://docs.python.org/3/reference/expressions.html#dictionary-displays
+[6:36][067]  | 21. In the DAG instantiation, add a reference to the default arguments dictionary:<br>```default_args=default_args```
 
 #### 17. What is an Operator?
 
 Timestamp    |  Description
 ------------ | --------------
-0:08         | 22. Definition: An operator defines one task in your data pipeline.
-0:39         | 23. Principle: Segregate tasks into repeatable / fail-able elements (e.g., separate the cleaning data task from the processing data task).
-1:21         | 24a. Definition: Three types of operators: Action operators (execute an action).<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/concepts.html#operators
-1:34         | 24b. Definition: Three types of operators: Transfer operators (transfer data).
-1:47         | 24c. Definition: Three types of operators: Sensors (wait for a condition to be met).<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/concepts.html#sensors
+[0:08][068]  | 22. Definition: An operator defines one task in your data pipeline.
+[0:39][069]  | 23. Principle: Segregate tasks into repeatable / fail-able elements (e.g., separate the cleaning data task from the processing data task).
+[1:21][070]  | 24a. Definition: Three types of operators: Action operators (execute an action).<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/concepts.html#operators
+[1:34][071]  | 24b. Definition: Three types of operators: Transfer operators (transfer data).
+[1:47][072]  | 24c. Definition: Three types of operators: Sensors (wait for a condition to be met).<br>Ref: https://airflow.apache.org/docs/apache-airflow/stable/concepts.html#sensors
 
 #### 18. [Practice] Creating Table
 
 Timestamp    |  Description
 ------------ | --------------
-0:18         | 25. Task 1: Create table: Add line (import SqliteOperator):<br>```from airflow.providers.sqlite.operators.sqlite import SqliteOperator```<br>Ref: https://airflow.apache.org/docs/apache-airflow-providers-sqlite/stable/operators.html
-1:21         | 26. Task 1: Create table: Add line (define variable for SqliteOperator):<br>```creating_table = SqliteOperator()```
-1:34         | 27. Task 1: Create table: Add line (create a Task ID unique in the context of the data pipeline):<br>```task_id='creating_table'```
-1:57         | 28. Task 1: Create table: Add line (define the connection to be used, created later):<br>```sqlite_conn_id='db_sqlite'```
-2:16         | 29. Task 1: Create table: Add line (provide the SQL to be used):<br>```sql='''```<br>```    CREATE TABLE users (```<br>```        -- user_id INTEGER PRIMARY KEY AUTOINCREMENT, --Originally included, but later deleted and replaced by email as primary key below```<br>```        firstname TEXT NOT NULL, ```<br>```        lastname TEXT NOT NULL, ```<br>```        country TEXT NOT NULL, ```<br>```        username TEXT NOT NULL, ```<br>```        password TEXT NOT NULL, ```<br>```        email TEXT NOT NULL PRIMARY KEY```<br>```    );```<br>```    '''```<br>Ref: https://docs.python.org/3/glossary.html?highlight=triple%20quoted%20string#term-triple-quoted-string<br>Ref: [SQLite: SQL Comment Syntax](https://sqlite.org/lang_comment.html)
-3:56         | Task 1: Create table:<br>33. Edit line (change Primary Key in SQL CREATE TABLE statement to be email instead)<br> <br>5:15 PM 4/6/2021<br>34. Unpause DAG to see results<br>```DAG: user_processing```<br>```Task Instance: creating_table```<br>```Log by attempts```<br>```-----------------------------```<br>```..```<br>```[2021-04-06 22:15:35,758] {taskinstance.py:1396} ERROR - The conn_id `db_sqlite` isn't defined```<br>```..```
-4:13         | Task 1: Create table: Create connection:<br>34. Start Airflow Web Server and Airflow Scheduler<br>In Terminal 1:<br>```source sandbox/bin/activate```<br>```airflow webserver```<br>In Terminal 2:<br>```source sandbox/bin/activate```<br>```airflow scheduler```
-5:35         | 35b. Check for SQLite package ("Requirement already satisfied: apache-airflow-providers-sqlite in ./sandbox/lib/python3.8/site-packages (1.0.2)")<br>```pip install 'apache-airflow-providers-sqlite'```<br>Ref: https://airflow.apache.org/docs/apache-airflow-providers/packages-ref.html#apache-airflow-providers-sqlite
-7:43         | Task 1: Create table: Create connection:<br>36. In Airflow UI, go to Admin (menu) and click on Connections
-7:55         | Task 1: Create table: Create connection:<br>37. Click [Add a new record] (button)
-8:00         | Task 1: Create table: Create connection:<br>38. Complete connection details<br>```A. Conn Id:     db_sqlite [same as value in sqlite_conn_id at step 28.]```<br>```B. Conn Type:   Sqlite```<br>```C. Description: SQLITE connection to the DB```<br>```D. Host:        /home/airflow/airflow/airflow.db```<br>39. Save connection and find in list of connections
+[0:18][073]  | 25. Task 1: Create table: Add line (import SqliteOperator):<br>```from airflow.providers.sqlite.operators.sqlite import SqliteOperator```<br>Ref: https://airflow.apache.org/docs/apache-airflow-providers-sqlite/stable/operators.html
+[1:21][074]  | 26. Task 1: Create table: Add line (define variable for SqliteOperator):<br>```creating_table = SqliteOperator()```
+[1:34][075]  | 27. Task 1: Create table: Add line (create a Task ID unique in the context of the data pipeline):<br>```task_id='creating_table'```
+[1:57][076]  | 28. Task 1: Create table: Add line (define the connection to be used, created later):<br>```sqlite_conn_id='db_sqlite'```
+[2:16][077]  | 29. Task 1: Create table: Add line (provide the SQL to be used):<br>```sql='''```<br>```    CREATE TABLE users (```<br>```        -- user_id INTEGER PRIMARY KEY AUTOINCREMENT, --Originally included, but later deleted and replaced by email as primary key below```<br>```        firstname TEXT NOT NULL, ```<br>```        lastname TEXT NOT NULL, ```<br>```        country TEXT NOT NULL, ```<br>```        username TEXT NOT NULL, ```<br>```        password TEXT NOT NULL, ```<br>```        email TEXT NOT NULL PRIMARY KEY```<br>```    );```<br>```    '''```<br>Ref: https://docs.python.org/3/glossary.html?highlight=triple%20quoted%20string#term-triple-quoted-string<br>Ref: [SQLite: SQL Comment Syntax](https://sqlite.org/lang_comment.html)
+[3:56][078]  | Task 1: Create table:<br>33. Edit line (change Primary Key in SQL CREATE TABLE statement to be email instead)<br> <br>5:15 PM 4/6/2021<br>34. Unpause DAG to see results<br>```DAG: user_processing```<br>```Task Instance: creating_table```<br>```Log by attempts```<br>```-----------------------------```<br>```..```<br>```[2021-04-06 22:15:35,758] {taskinstance.py:1396} ERROR - The conn_id `db_sqlite` isn't defined```<br>```..```
+[4:13][079]  | Task 1: Create table: Create connection:<br>34. Start Airflow Web Server and Airflow Scheduler<br>In Terminal 1:<br>```source sandbox/bin/activate```<br>```airflow webserver```<br>In Terminal 2:<br>```source sandbox/bin/activate```<br>```airflow scheduler```
+[5:35][080]  | 35b. Check for SQLite package ("Requirement already satisfied: apache-airflow-providers-sqlite in ./sandbox/lib/python3.8/site-packages (1.0.2)")<br>```pip install 'apache-airflow-providers-sqlite'```<br>Ref: https://airflow.apache.org/docs/apache-airflow-providers/packages-ref.html#apache-airflow-providers-sqlite
+[7:43][081]  | Task 1: Create table: Create connection:<br>36. In Airflow UI, go to Admin (menu) and click on Connections
+[7:55][082]  | Task 1: Create table: Create connection:<br>37. Click [Add a new record] (button)
+[8:00][083]  | Task 1: Create table: Create connection:<br>38. Complete connection details<br>```A. Conn Id:     db_sqlite [same as value in sqlite_conn_id at step 28.]```<br>```B. Conn Type:   Sqlite```<br>```C. Description: SQLITE connection to the DB```<br>```D. Host:        /home/airflow/airflow/airflow.db```<br>39. Save connection and find in list of connections
 
 #### 19. [Practice] The secret weapon!
 
 Timestamp    |  Description
 ------------ | --------------
-0:00         | Task 1: Create table: Test task:<br>40. View command line help<br>```airflow tasks test -h```<br>41. Run command line statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing creating_table 2020-01-01```
-1:13         | Task 1: Create table: Test task:<br>42. Verify new table exists<br>A. Start SQLite with the underlying Airflow SQLite database<br>```sqlite3 airflow.db```<br>B. List tables<br>```sqlite> .tables```<br>--> Existence of table [users]<br>Ref: [Command Line Shell for SQLite](https://sqlite.org/cli.html)<br>C. Note: The table is empty<br>```sqlite> SELECT * FROM users;```<br>--> Empty result
+[0:00][084]  | Task 1: Create table: Test task:<br>40. View command line help<br>```airflow tasks test -h```<br>41. Run command line statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing creating_table 2020-01-01```
+[1:13][085]  | Task 1: Create table: Test task:<br>42. Verify new table exists<br>A. Start SQLite with the underlying Airflow SQLite database<br>```sqlite3 airflow.db```<br>B. List tables<br>```sqlite> .tables```<br>--> Existence of table [users]<br>Ref: [Command Line Shell for SQLite](https://sqlite.org/cli.html)<br>C. Note: The table is empty<br>```sqlite> SELECT * FROM users;```<br>--> Empty result
 
 #### 20. [Practice] Is API available?
 
 Timestamp    |  Description
 ------------ | --------------
-0:45         | Task 2: Is API Available?<br>43. Add import statement<br>```from airflow.providers.http.sensors.http import HttpSensor```<br>Ref: [apache-airflow-providers-http](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html)<br>Ref: [HTTP Operators](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html)
-1:13         | Task 2: Is API Available?: Define task<br>44. Define task<br>A. Add variable<br>```is_api_available = HttpSensor(```<br>``` ```<br>```)```<br>B. Add Task ID<br>```task_id='is_api_available'```<br>C. Add Connection ID<br>```# To be defined in the UI and point to the URL of an API```<br>```http_conn_id='user_api'```<br>D. Add End Point<br>```# The page to be checked```<br>```endpoint='api/'```
-2:14         | Task 2: Is API Available?: Create connection<br>45. In Airflow UI, go to Admin (menu) and click on Connections<br>46. Click [Add a new record] (button)<br>47. Complete connection details<br>```A. Conn Id:     user_api```<br>```B. Conn Type:   HTTP```<br>```C. Description: API for getting users```<br>```D. Host:        https://randomuser.me/```<br>48. Save connection and find in list of connections<br>Ref: [Documentation for the Random User Generator API](https://randomuser.me/documentation)
-3:36         | Task 2: Is API Available?: Check provider installation<br>49. Check that the provider has been installed (Requirement already satisfied: apache-airflow-providers-http in ./sandbox/lib/python3.8/site-packages (1.1.1))<br>```pip install apache-airflow-providers-http```<br>Ref: [apache-airflow-providers-http](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html#installation)
-4:13         | Task 2: Is API Available?: Test task<br>50. Run command line statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing is_api_available 2020-01-01```
+[0:45][086]  | Task 2: Is API Available?<br>43. Add import statement<br>```from airflow.providers.http.sensors.http import HttpSensor```<br>Ref: [apache-airflow-providers-http](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html)<br>Ref: [HTTP Operators](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html)
+[1:13][087]  | Task 2: Is API Available?: Define task<br>44. Define task<br>A. Add variable<br>```is_api_available = HttpSensor(```<br>``` ```<br>```)```<br>B. Add Task ID<br>```task_id='is_api_available'```<br>C. Add Connection ID<br>```# To be defined in the UI and point to the URL of an API```<br>```http_conn_id='user_api'```<br>D. Add End Point<br>```# The page to be checked```<br>```endpoint='api/'```
+[2:14][088]  | Task 2: Is API Available?: Create connection<br>45. In Airflow UI, go to Admin (menu) and click on Connections<br>46. Click [Add a new record] (button)<br>47. Complete connection details<br>```A. Conn Id:     user_api```<br>```B. Conn Type:   HTTP```<br>```C. Description: API for getting users```<br>```D. Host:        https://randomuser.me/```<br>48. Save connection and find in list of connections<br>Ref: [Documentation for the Random User Generator API](https://randomuser.me/documentation)
+[3:36][089]  | Task 2: Is API Available?: Check provider installation<br>49. Check that the provider has been installed (Requirement already satisfied: apache-airflow-providers-http in ./sandbox/lib/python3.8/site-packages (1.1.1))<br>```pip install apache-airflow-providers-http```<br>Ref: [apache-airflow-providers-http](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html#installation)
+[4:13][090]  | Task 2: Is API Available?: Test task<br>50. Run command line statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing is_api_available 2020-01-01```
 
 #### 21. [Practice] Extracting users
 
 Timestamp    |  Description
 ------------ | --------------
-0:47         | Task 3: Extracting Users: Import Operator<br>51. Add import statement<br>```from airflow.providers.http.operators.http import SimpleHttpOperator```<br>Ref: [apache-airflow-providers-http](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html)<br>Ref: [HTTP Operators: SimpleHttpOperator](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html#simplehttpoperator)
-1:17         | Task 3: Extracting Users: Define task<br>52. Define task<br>Ref: [Documentation: class airflow.providers.http.operators.http.SimpleHttpOperator](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/_api/airflow/providers/http/operators/http/index.html)<br>A. Add variable<br>```extracting_user = SimpleHttpOperator(```<br>``` ```<br>```)```<br>B. Add Task ID<br>```task_id='extracting_user'```<br>C. Add Connection ID<br>```# As previously defined```<br>```http_conn_id='user_api'```<br>D. Add End Point<br>```# The page to be checked```<br>```endpoint='api/'```
-2:11         | Task 3: Extracting Users: Define task<br>52. Define task (continued)<br>E. Add Method<br>```# Use GET since no data is sent to the URL```<br>```method='GET'```<br>F. Add Response Filter with a Lambda function<br>```# A formula to manipulate the response text```<br>```response_filter=lambda response: json.loads(response.text)```<br>Ref: [Python Reference: Lambda Expressions](https://docs.python.org/3/reference/expressions.html#lambda)<br>Ref: [Python Tutorial: Lambda Expressions](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)<br>Ref: [Python Reference: json: json.loads](https://docs.python.org/3/library/json.html#json.loads)<br>G. Set Log Response to true<br>```# So that response text is included in the logs```<br>```log_response=True```
-3:17         | Task 3: Extracting Users: Import json<br>53. Import the Python json package<br>```import json```<br>Ref: [Python Standard Library: JSON Encoder and Decoder module](https://docs.python.org/3/library/json.html)<br>Ref: [Introducing JSON (JavaScript Object Notation)](https://www.json.org/json-en.html)<br>Ref: [Python Language Reference: 5. The Import System](https://docs.python.org/3/reference/import.html)
-3:36         | Task 3: Extracting Users: Test task<br>54. Run command line statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing extracting_user 2020-01-01```
-
+[0:47][091]  | Task 3: Extracting Users: Import Operator<br>51. Add import statement<br>```from airflow.providers.http.operators.http import SimpleHttpOperator```<br>Ref: [apache-airflow-providers-http](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html)<br>Ref: [HTTP Operators: SimpleHttpOperator](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/operators.html#simplehttpoperator)
+[1:17][092]  | Task 3: Extracting Users: Define task<br>52. Define task<br>Ref: [Documentation: class airflow.providers.http.operators.http.SimpleHttpOperator](https://airflow.apache.org/docs/apache-airflow-providers-http/stable/_api/airflow/providers/http/operators/http/index.html)<br>A. Add variable<br>```extracting_user = SimpleHttpOperator(```<br>``` ```<br>```)```<br>B. Add Task ID<br>```task_id='extracting_user'```<br>C. Add Connection ID<br>```# As previously defined```<br>```http_conn_id='user_api'```<br>D. Add End Point<br>```# The page to be checked```<br>```endpoint='api/'```
+[2:11][093]  | Task 3: Extracting Users: Define task<br>52. Define task (continued)<br>E. Add Method<br>```# Use GET since no data is sent to the URL```<br>```method='GET'```<br>F. Add Response Filter with a Lambda function<br>```# A formula to manipulate the response text```<br>```response_filter=lambda response: json.loads(response.text)```<br>Ref: [Python Reference: Lambda Expressions](https://docs.python.org/3/reference/expressions.html#lambda)<br>Ref: [Python Tutorial: Lambda Expressions](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)<br>Ref: [Python Reference: json: json.loads](https://docs.python.org/3/library/json.html#json.loads)<br>G. Set Log Response to true<br>```# So that response text is included in the logs```<br>```log_response=True```
+[3:17][094]  | Task 3: Extracting Users: Import json<br>53. Import the Python json package<br>```import json```<br>Ref: [Python Standard Library: JSON Encoder and Decoder module](https://docs.python.org/3/library/json.html)<br>Ref: [Introducing JSON (JavaScript Object Notation)](https://www.json.org/json-en.html)<br>Ref: [Python Language Reference: 5. The Import System](https://docs.python.org/3/reference/import.html)
+[3:36][095]  | Task 3: Extracting Users: Test task<br>54. Run command line statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing extracting_user 2020-01-01```
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
@@ -240,3 +239,49 @@ Timestamp    |  Description
 [047]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11941194?start=453#notes
 [048]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11941194?start=474#notes
 [049]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11941194?start=480#notes
+[050]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11945388?start=21#notes
+[051]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11945388?start=54#notes
+[052]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11945388?start=33#notes
+[053]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=7#notes
+[054]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=65#notes
+[055]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=107#notes
+[056]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=133#notes
+[057]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=165#notes
+[058]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=190#notes
+[059]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=217#notes
+[060]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=230#notes
+[061]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=253#notes
+[062]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=277#notes
+[063]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=302#notes
+[064]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=315#notes
+[065]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=340#notes
+[066]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=379#notes
+[067]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585572?start=396#notes
+[068]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11951346?start=8#notes
+[069]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11951346?start=39#notes
+[070]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11951346?start=81#notes
+[071]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11951346?start=94#notes
+[072]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11951346?start=107#notes
+[073]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=18#notes
+[074]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=81#notes
+[075]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=94#notes
+[076]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=117#notes
+[077]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=136#notes
+[078]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=236#notes
+[079]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=253#notes
+[080]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=335#notes
+[081]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=463#notes
+[082]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=475#notes
+[083]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585594?start=480#notes
+[084]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585598?start=0#notes
+[085]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585598?start=73#notes
+[086]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585602?start=45#notes
+[087]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585602?start=73#notes
+[088]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585602?start=134#notes
+[089]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585602?start=216#notes
+[090]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585602?start=253#notes
+[091]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585604?start=47#notes
+[092]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585604?start=77#notes
+[093]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585604?start=131#notes
+[094]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585604?start=197#notes
+[095]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585604?start=216#notes
