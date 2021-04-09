@@ -16,6 +16,8 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 
 ## Notes
 
+**Note**: Links to Udemy courses are included and will require purchase of the referenced course. 
+
 ### 2. Getting Started with Airflow
 
 #### 7. What is Airflow?
