@@ -206,6 +206,8 @@ Timestamp    |  Description
 [7:02][103]  | Task 4: Processing Users: Define Python function: Flatten JSON<br>62. Flatten JSON object into a Pandas DataFrame<br>A. Import function from Pandas library<br>```from pandas import json_normalize```<br>B. Insert function in assignment for variable ```processed_user```<br>```processed_user = json_normalize({..```<br>Ref: [Pandas Documentation: API Reference: json_normalize](https://pandas.pydata.org/docs/reference/api/pandas.json_normalize.html)<br>Ref: [Towards Data Science: All Pandas json_normalize() you should know for flattening JSON](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd)
 [7:40][104]  | Task 4: Processing Users: Define Python function: Save as CSV<br>63. Save Pandas DataFrame to CSV<br>```    processed_user.to_csv('/tmp/processed_user.csv', index=None, header=False)```<br>Ref: [Pandas Documentation: API Reference: DataFrame.to_csv](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
 [8:30][105]  | Task 4: Processing Users: Define Python function: Pull Xcom<br>64. Pull Xcom value from last task instance of 'extracting_user' task<br>A. Add parameter for task instance to function parameters definition.<br>```def _processing_user(ti):```<br>B. Update assignment of users variable.<br>```    users = ti.xcom_pull(tasks_id=['extracting_user'])```
+[10:55][106] | Task 4: Processing Users: Test Task<br>65. Test task<br>A. Run statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing processing_user 2020-01-01```<br>Result --> Success<br>B. List file<br>```ls /tmp```<br>```processed_user.csv```<br>C. Cat file<br>```cat /tmp/processed_user.csv ```<br>```Amelia,Steward,Australia,orangekoala403,sage,amelia.steward@example.com```
+
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
@@ -312,3 +314,4 @@ Timestamp    |  Description
 [103]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=422#notes
 [104]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=460#notes
 [105]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=510#notes
+[106]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=655#notes
