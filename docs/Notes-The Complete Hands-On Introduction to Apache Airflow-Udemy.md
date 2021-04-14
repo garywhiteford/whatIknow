@@ -238,6 +238,7 @@ Timestamp    |  Description
 Timestamp    |  Description
 ------------ | --------------
 [0:50][112]  | Define Dependencies<br>71. Chain multiple dependencies with the bit shift operator<br>```creating_table >> is_api_available >> extracting_user >> processing_user >> storing_user```<br>Ref: [Airflow Tutorial: Setting up Dependencies [Chaining multiple dependencies]](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=import#setting-up-dependencies)
+[2:47][113]  | Define Dependencies<br>72. Check dependencies in Graph View of Airflow UI
 
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
@@ -352,3 +353,4 @@ Timestamp    |  Description
 [110]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=262#notes
 [111]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=284#notes
 [112]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11958038?start=50#notes
+[113]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11958038?start=167#notes
