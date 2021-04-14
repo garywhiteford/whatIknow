@@ -27,6 +27,7 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 * [21. [Practice] Extracting users](#21-practice-extracting-users)
 * [22. [Practice] Processing users](#22-practice-processing-users)
 * [23. [Practice] Storing users](#23-practice-storing-users)
+* [24. [Practice] Order matters!](#24-practice-order-matters)
 
 ## Notes
 
@@ -232,6 +233,12 @@ Timestamp    |  Description
 [4:22][110]  | Task 5: Storing Users: Test Task<br>69. Test task<br>A. Run statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing storing_user 2020-01-01```<br>Result --> Success (after re-running processing_user -- file dropped since yesterday)
 [4:44][111]  | Task 5: Storing Users: Check SQLite Database After<br>70. Run SQLite commands<br>A. Start SQLite<br>```cd ~/airflow```<br>```sqlite3 airflow.db```<br>B. Select records from table<br>```SELECT * FROM users;```<br>Result --> 1 row (Success!)<br>C. Exit SQLite<br>```# Ctrl+D```
 
+#### 24. [Practice] Order matters!
+
+Timestamp    |  Description
+------------ | --------------
+[0:50][112]  | Define Dependencies<br>71. Chain multiple dependencies with the bit shift operator<br>```creating_table >> is_api_available >> extracting_user >> processing_user >> storing_user```<br>Ref: [Airflow Tutorial: Setting up Dependencies [Chaining multiple dependencies]](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=import#setting-up-dependencies)
+
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
@@ -344,3 +351,4 @@ Timestamp    |  Description
 [109]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=235#notes
 [110]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=262#notes
 [111]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=284#notes
+[112]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11958038?start=50#notes
