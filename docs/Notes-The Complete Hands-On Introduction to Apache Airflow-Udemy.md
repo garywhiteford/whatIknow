@@ -208,6 +208,16 @@ Timestamp    |  Description
 [8:30][105]  | Task 4: Processing Users: Define Python function: Pull Xcom<br>64. Pull Xcom value from last task instance of 'extracting_user' task<br>A. Add parameter for task instance to function parameters definition.<br>```def _processing_user(ti):```<br>B. Update assignment of users variable.<br>```    users = ti.xcom_pull(tasks_id=['extracting_user'])```
 [10:55][106] | Task 4: Processing Users: Test Task<br>65. Test task<br>A. Run statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing processing_user 2020-01-01```<br>Result --> Success<br>B. List file<br>```ls /tmp```<br>```processed_user.csv```<br>C. Cat file<br>```cat /tmp/processed_user.csv ```<br>```Amelia,Steward,Australia,orangekoala403,sage,amelia.steward@example.com```
 
+#### 23. [Practice] Storing users
+
+Timestamp    |  Description
+------------ | --------------
+[1:40][107]  | Task 5: Storing Users: Import Operator<br>66. Add import statement<br>```from airflow.operators.bash import BashOperator```<br>Ref: [Airflow: Python API Reference: airflow.operators.bash](https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/bash/index.html)<br>Ref: [Airflow: How-to Guides: BashOperator](https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/bash.html)<br>Ref: [Airflow: Tutorial](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)
+[2:01][108]  | Task 5: Storing Users: Define task<br>67. Define task<br>Ref: [Airflow: Python API Reference: airflow.operators.bash](https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/bash/index.html)<br>A. Add variable<br>```storing_user = BashOperator(```<br>``` ```<br>```)```<br>B. Add Task ID<br>```task_id='storing_user'```<br>C. Add Bash Command<br>```bash_command='echo -e ".separator ","\n.import /tmp/processed_user.csv users" \| sqlite3 /home/airflow/airflow/airflow.db'```<br>Ref: [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html#index-echo)<br>Ref: [Command Line Shell for SQLite](https://sqlite.org/cli.html)<br>Ref: [Command Line Shell For SQLite: 7.5. Importing CSV files](https://sqlite.org/cli.html#importing_csv_files)
+[3:55][109]  | Task 5: Storing Users: Check SQLite Database Before<br>68. Run SQLite commands<br>A. Start SQLite<br>```cd ~/airflow```<br>```sqlite3 airflow.db```<br>B. Select records from table<br>```sqlite> SELECT * FROM users;```<br>Result --> Empty<br>C. Exit SQLite<br>```# Ctrl+D to exit```
+[4:22][110]  | Task 5: Storing Users: Test Task<br>69. Test task<br>A. Run statement<br>```# airflow tasks test dag_id task_id execution_date```<br>```airflow tasks test user_processing storing_user 2020-01-01```<br>Result --> Success (after re-running processing_user -- file dropped since yesterday)
+[4:44][111]  | Task 5: Storing Users: Check SQLite Database After<br>70. Run SQLite commands<br>A. Start SQLite<br>```cd ~/airflow```<br>```sqlite3 airflow.db```<br>B. Select records from table<br>```SELECT * FROM users;```<br>Result --> 1 row (Success!)<br>C. Exit SQLite<br>```# Ctrl+D```
+
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
@@ -315,3 +325,8 @@ Timestamp    |  Description
 [104]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=460#notes
 [105]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=510#notes
 [106]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340876?start=655#notes
+[107]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=100#notes
+[108]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=121#notes
+[109]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=235#notes
+[110]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=262#notes
+[111]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=284#notes
