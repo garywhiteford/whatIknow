@@ -14,6 +14,20 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 * [11. [Practice] What you need to know about the UI](#11-practice-what-you-need-to-know-about-the-ui) (Views, Logs)
 * [Section 2: Key Takeaways](#section-2-key-takeaways)
 
+### 3. Coding Your First Data Pipeline with Airflow
+
+* [13. Introduction](#13-introduction)
+* [14. What is a DAG?](#14-what-is-a-dag)
+* [15. [Practice] Time to code your first DAG](#15-practice-time-to-code-your-first-dag)
+* [16. [Practice] DAG Skeleton](#16-practice-dag-skeleton)
+* [17. What is an Operator?](#17-what-is-an-operator)
+* [18. [Practice] Creating Table](#18-practice-creating-table)
+* [19. [Practice] The secret weapon!](#19-practice-the-secret-weapon!)
+* [20. [Practice] Is API available?](#20-practice-is-api-available)
+* [21. [Practice] Extracting users](#21-practice-extracting-users)
+* [22. [Practice] Processing users](#22-practice-processing-users)
+* [23. [Practice] Storing users](#23-practice-storing-users)
+
 ## Notes
 
 **Note**: Links to Udemy courses are included and will require purchase of the referenced course. 
