@@ -22,7 +22,7 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 * [16. [Practice] DAG Skeleton](#16-practice-dag-skeleton)
 * [17. What is an Operator?](#17-what-is-an-operator)
 * [18. [Practice] Creating Table](#18-practice-creating-table)
-* [19. [Practice] The secret weapon!](#19-practice-the-secret-weapon!)
+* [19. [Practice] The secret weapon!](#19-practice-the-secret-weapon)
 * [20. [Practice] Is API available?](#20-practice-is-api-available)
 * [21. [Practice] Extracting users](#21-practice-extracting-users)
 * [22. [Practice] Processing users](#22-practice-processing-users)
