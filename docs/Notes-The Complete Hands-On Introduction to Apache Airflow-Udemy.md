@@ -29,7 +29,7 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 * [23. [Practice] Storing users](#23-practice-storing-users)
 * [24. [Practice] Order matters!](#24-practice-order-matters)
 * [25. [Practice] You [sic!] data pipeline in action!](#25-practice-you-data-pipeline-in-action)
-
+* [26. Dag scheduling](#26-dag-scheduling)
 
 ## Notes
 
@@ -255,6 +255,14 @@ Timestamp    |  Description
 [1:20][120]  | 79. Click on task creating_table, clear the previous state by clicking on the Clear button and then OK! (see screenshot)<br>![image](https://user-images.githubusercontent.com/33525443/114922636-8771e680-9df1-11eb-9c59-c11d4db3f17f.png)
 [1:41][121]  | 80. Pause the DAG
 
+#### 26. Dag scheduling
+
+Timestamp    |  Description
+------------ | --------------
+[0:08][123]  | 81. In DAG scheduling, two arguments are always defined:<br>A. start_date (when DAG will start being scheduled) and
+[0:35][124]  | B. schedule_interval (frequency at which DAG will be triggered)
+[1:23][125]  | 82. Triggering occurs after start date plus scheduling interval have elapsed.<br>A. Example: start_date = 2020-01-01, schedule_interval = 10 min.<br>B. Trigger = 2020-01-01 at 10:10 a.m.<br>C. execution_date (as recorded) = 2020-01-01 at 10:00 a.m. (trigger - schedule_interval)
+
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
@@ -377,3 +385,6 @@ Timestamp    |  Description
 [119]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=72#notes
 [120]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=80#notes
 [121]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=101#notes
+[123]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/12156108?start=8#notes
+[124]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/12156108?start=35#notes
+[125]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/12156108?start=83#notes
