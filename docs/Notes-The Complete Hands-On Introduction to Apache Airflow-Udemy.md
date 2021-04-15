@@ -28,6 +28,8 @@ Learn to author, schedule and monitor data pipelines through practical examples 
 * [22. [Practice] Processing users](#22-practice-processing-users)
 * [23. [Practice] Storing users](#23-practice-storing-users)
 * [24. [Practice] Order matters!](#24-practice-order-matters)
+* [25. [Practice] You [sic!] data pipeline in action!](#25-practice-you-data-pipeline-in-action)
+
 
 ## Notes
 
@@ -240,6 +242,19 @@ Timestamp    |  Description
 [0:50][112]  | Define Dependencies<br>71. Chain multiple dependencies with the bit shift operator<br>```creating_table >> is_api_available >> extracting_user >> processing_user >> storing_user```<br>Ref: [Airflow Tutorial: Setting up Dependencies [Chaining multiple dependencies]](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html?highlight=import#setting-up-dependencies)
 [2:47][113]  | Define Dependencies<br>72. Check dependencies in Graph View of Airflow UI
 
+#### 25. [Practice] You [sic!] data pipeline in action!
+
+Timestamp    |  Description
+------------ | --------------
+[0:00][114]  | Run (Test) your DAG:<br>73. Open DAG in Airflow UI
+[0:11][115]  | 74. "Turn on the trigger" (Unpause the DAG using the Pause/Unpause switch in upper left)
+[0:15][116]  | 75. Refresh the page (notice error in creating_table -- table already exists)
+[0:20][117]  | 76. View log (click on task to open Model view, click on Log button, notice error message: "Table users already exists" [see screenshot])<br>![image](https://user-images.githubusercontent.com/33525443/114922559-73c68000-9df1-11eb-9b77-ebe9c3063ede.png)
+[1:07][118]  | 77. Modify SQLite SQL to work whether table exists or not by adding "IF NOT EXISTS" to the CREATE TABLE statement<br>Ref: [SQLite Documentation: SQL As Understood By SQLite](https://sqlite.org/lang.html)<br>Ref: [SQLite Documentation: CREATE TABLE](https://sqlite.org/lang_createtable.html)
+[1:12][119]  | 78. Save the file, go back to the DAG, click on Graph View, refresh the data pipeline (DAG) using refresh button in upper right
+[1:20][120]  | 79. Click on task creating_table, clear the previous state by clicking on the Clear button and then OK! (see screenshot)<br>![image](https://user-images.githubusercontent.com/33525443/114922636-8771e680-9df1-11eb-9c59-c11d4db3f17f.png)
+[1:41][121]  | 80. Pause the DAG
+
 
 [001]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=34#notes
 [002]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11918638?start=64#notes
@@ -354,3 +369,11 @@ Timestamp    |  Description
 [111]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/24340884?start=284#notes
 [112]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11958038?start=50#notes
 [113]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/11958038?start=167#notes
+[114]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=0#notes
+[115]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=11#notes
+[116]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=15#notes
+[117]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=20#notes
+[118]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=67#notes
+[119]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=72#notes
+[120]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=80#notes
+[121]: https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/learn/lecture/19585632?start=101#notes
