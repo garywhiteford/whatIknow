@@ -36,6 +36,7 @@ Gary's repository of knowledge for reference and referrals.
 ## [Resources...][12]
 
 * [Common Education Data Standards](https://ceds.ed.gov/relatedInitiatives.aspx) ([More...][13])
+* [cheat.sh](https://cheat.sh/): The only cheat sheet you need. Unified access to the best community driven documentation repositories of the world.
 
 [1]: https://app.thebrain.com/brains/9fa1ab0a-92d5-7e37-b20c-96a1f84461c0/thoughts/e03f4f88-6b12-5163-9918-8968e8858e1a/notes
 [2]: https://app.thebrain.com/brains/9fa1ab0a-92d5-7e37-b20c-96a1f84461c0/thoughts/c5df7aef-27dd-5f1c-b1ec-b8c9864f5edb/notes
